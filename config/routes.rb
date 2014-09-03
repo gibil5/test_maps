@@ -1,3 +1,7 @@
+
+
+# jr@oblique:  3/9/14
+
 Rails.application.routes.draw do
   get 'static_pages/home'
 
