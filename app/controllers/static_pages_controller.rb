@@ -1,5 +1,5 @@
 
-# jr@oblique:  3/9/14
+# jr@oblique:  4/9/14
 
 
 class StaticPagesController < ApplicationController
@@ -8,6 +8,9 @@ class StaticPagesController < ApplicationController
   end
 
   def help
+  end
+
+  def map
   end
 
 end
