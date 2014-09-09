@@ -1,26 +1,15 @@
 
 
-# jr@oblique:  4/9/14
-
 require 'spec_helper'
 
-describe "Map viewing" do
-
-  subject { page }
-
-
-  describe "map viewing page" do
-    before { visit map_path }
-    it { should have_content('Maps') }
-    it { should have_title('Test Maps') }
+describe "MapPages" do
+  describe "GET /map_pages" do
+    it "works! (now write some real specs)" do
+      # Run the generator again with the --webrat flag if you want to use webrat methods/matchers
+      get map_pages_index_path
+      response.status.should be(200)
+    end
   end
-
-
-  describe "map viewing" do
-    before { visit map_path }
-    # ...
-  end
-
-
 end
+
 

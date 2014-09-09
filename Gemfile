@@ -10,6 +10,11 @@ gem 'rails', '4.1.4'
 
 
 #jr
+gem 'spreadsheet'
+#gem 'gmaps4rails'
+gem 'gmaps4rails', '1.5.6'
+
+
 # Bootstrap 
 gem 'bootstrap-sass', '2.3.2.0'
 gem 'sprockets', '2.11.0'

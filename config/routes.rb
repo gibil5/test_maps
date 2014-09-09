@@ -1,13 +1,24 @@
 
-
 # jr@oblique:  3/9/14
 
+
 Rails.application.routes.draw do
-  get 'static_pages/home'
+  
+
+  resources :maps
+
+  get 'points/new'
 
   root  'static_pages#home'
-  match '/help',    to: 'static_pages#help',          via: 'get'
-  match '/map',    to: 'static_pages#map',          via: 'get'
+#         url           controller action                 http request 
+  match '/help',        to: 'static_pages#help',          via: 'get'
+
+  #match '/map',        to: 'static_pages#map',            via: 'get'
+  match '/maps',     to: 'maps#new',                    via: 'get' 
+  #match '/create',  to: 'maps#create',                 via: 'get' 
+
+  match '/maps',     to: 'maps#create',                    via: 'post' 
+
 
 
 
